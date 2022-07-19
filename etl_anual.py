@@ -15,7 +15,8 @@ for file_name in files_name:
     ZipFile(file_name, 'r').extractall('CSV')
 
 
-sulfixo = ['alienacao_imovel', 'ativo', 'ativo_garantia_rentabilidade', 'complemento', 'direito', 'geral', 'imovel', 'imovel_desempenho', 'imovel_renda_acabado_contrato', 'imovel_renda_acabado_inquilino', 'rentabilidade_efetiva', 'resultado_contabil_financeiro', 'terreno']
+sulfixo = ['ativo_adquirido', 'ativo_transacao', 'ativo_valor_contabil', 'complemento', 'diretor_responsavel', 'distribuicao_cotistas',
+            'experiencia_profissional', 'geral', 'prestador_servico', 'processo', 'processo_semelhante', 'representante_cotista', 'representante_cotista_fundo']
 
 for fix in sulfixo:
     df = pd.DataFrame()
